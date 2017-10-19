@@ -14,4 +14,11 @@ for i in result:
         dict[i[0]] = list()
     dict[i[0]].append(i[1])
 
-print(json.dumps(dict, indent=4))
+composers = list()
+for i in dict.items():
+    d = {}
+    d["name"] = i[0]
+    d["scores"] = i[1]
+    composers.append(d)
+
+print(json.dumps(composers, indent=4))
