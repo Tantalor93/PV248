@@ -13,7 +13,8 @@ create table score ( id integer primary key not null,
                      genre varchar,
                      key varchar,
                      incipit varchar,
-                     year integer );
+                     year integer,
+                     name varchar);
 
 -- Information about the voices in a particular score. Scores often contain
 -- multiple voices, hence a separate table. The relationship is 1:N (each row
