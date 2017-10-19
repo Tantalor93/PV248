@@ -16,9 +16,7 @@ for i in result:
 
 composers = list()
 for i in dict.items():
-    d = {}
-    d["name"] = i[0]
-    d["scores"] = i[1]
+    d = {"name": i[0], "scores": i[1]}
     composers.append(d)
 
 print(json.dumps(composers, indent=4))
